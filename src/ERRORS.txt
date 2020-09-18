@@ -1,0 +1,21 @@
+ERRORS:
+core.js:4197 ERROR Error: formGroup expects a FormGroup instance. Please pass one in.
+
+       Example:
+
+
+    <div [formGroup]="myGroup">
+      <input formControlName="firstName">
+    </div>
+
+    In your class:
+
+    this.myGroup = new FormGroup({
+       firstName: new FormControl()
+    });
+    at Function.missingFormException (forms.js:1703)
+    at FormGroupDirective._checkFormPresent (forms.js:5615)
+    at FormGroupDirective.ngOnChanges (forms.js:5437)
+    at FormGroupDirective.rememberChangeHistoryAndInvokeOnChangesHook (core.j
+
+    RESOLVE THIS ERROR BY CHECKING SPELLING MISTAKES IN THE NGONINIT SUBSCRIBE IF YOU ARE USING ONE!
